@@ -1,0 +1,19 @@
+network:
+  interface: "lo"
+  whitelist: "whitelist.txt"
+
+rules:
+  ban_threshold: 20
+  ban_time: 600      
+  decay_interval: 60
+  packets_limit: 500
+
+honey_ports: [21, 23, 445, 1433, 3389, 5432, 53, 123, 161, 445]
+
+logging:
+  log_file: "shadewall_log.json"
+  geoip_enabled: "http://ip-api.com/json/"
+
+telegram:
+  bot_id: ''
+  user_id: ''
